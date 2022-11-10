@@ -1,38 +1,85 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.mainContainer {
   display: flex;
+  /*border: dashed grey; */
+  /*background-color: pink;*/
+  width: 97vw;
+  height: 96vh;
+  justify-content: space-around;
+  margin:auto;
+  padding:5px;
+}
+
+.inputDivContainer {
+  background-color: lightgray;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border: dashed black;
+  display: flex;
+  width: 40%;
+  height: 96%;
+  gap:10px;
 }
 
-.App-link {
-  color: #61dafb;
+.outputDivContainer {
+  background-color: lightgray;
+  flex-direction: column;
+  align-items: center;
+  border: dashed black;
+  display: flex;
+  width: 40%;
+  height: 96%;
+  gap:10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.summaryDiv {
+  display:flex;
+  flex-direction: column;
+  background-color: lightblue;
+  width:100%
+}
+
+input {
+  max-width: 50%;
+  font-size: large;
+}
+
+textarea {
+  font-size: large;
+}
+
+
+
+.nameHeading{
+  color:black;
+  font-weight: 800;
+}
+
+.leftHeading {
+  align-self: flex-start;
+  color:black;
+  font-weight: 800;
+}
+
+.userAddress {
+  
+}
+
+.indentText {
+  align-self:flex-start;
+  padding-left:2vw;
+}
+
+
+hr.rounded {
+  border-top: 8px solid black;
+  width: 80%;
+  border-radius: 5px;
+}
+
+
+* {
+  font-family: "TimesNewRoman", "Times New Roman", "Times New Roman", Times,
+    serif;
+
+    margin:0;
 }
